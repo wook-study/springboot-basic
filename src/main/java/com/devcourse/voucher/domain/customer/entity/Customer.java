@@ -4,6 +4,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import org.apache.logging.log4j.util.Strings;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 import static com.google.common.base.Preconditions.checkArgument;
@@ -11,7 +12,7 @@ import static com.google.common.base.Preconditions.checkState;
 
 @Getter
 @EqualsAndHashCode(of = "id")
-public class Customer {
+public class Customer implements Serializable {
     /* 고객 아이디 */
     private final UUID id = UUID.randomUUID();
 
