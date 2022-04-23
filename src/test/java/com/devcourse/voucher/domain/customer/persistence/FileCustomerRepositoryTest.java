@@ -29,7 +29,7 @@ class FileCustomerRepositoryTest {
     }
 
     private void clear() {
-        final File filePath = new File(PATH);
+        val filePath = new File(PATH);
 
         if (!filePath.exists()) {
             filePath.mkdir();

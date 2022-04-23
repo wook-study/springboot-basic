@@ -16,7 +16,7 @@ public class FileCustomerRepository implements CustomerRepository {
     private final File directory;
 
     public FileCustomerRepository(String path) {
-        final File directory = new File(path);
+        val directory = new File(path);
 
         if (!directory.exists()) {
             directory.mkdir();
